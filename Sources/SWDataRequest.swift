@@ -46,6 +46,8 @@ class SWDataRequest: NSObject {
                 var content : String = ""
                 var webDetail : String = ""
                 var image : String = ""
+                var author : String = ""
+                var createTime : String = ""
                 for childItem in item.getElementsByTagName("dd") {
                     let childAtt = childItem.getAttribute(name: "class")
                     let firstChildNode = childItem.firstChild
@@ -55,13 +57,18 @@ class SWDataRequest: NSObject {
                     }
                     if childItem.nodeType != .documentNode && childAtt == "ht-name"{
                         title = (firstChildNode?.nodeValue)!
-                        webDetail = (firstChildNode?.attributes?.getNamedItem(name: "href")?.nodeValue)!
+                        webDetail = "http://www.hunliji.com\((firstChildNode?.attributes?.getNamedItem(name: "href")?.nodeValue)!)"
                     }
                     if childItem.nodeType != .documentNode && childAtt == "ht-text"{
                         content = (firstChildNode?.nodeValue)!
                     }
+                    if childItem.nodeType != .documentNode && childAtt == "ht-source"{
+                        author = childItem.nodeValue!
+                    }
                 }
-                print("title == \(title) content == \(content) webDetail == \(webDetail) image = \(image) \n")
+                let insert = articleOprator.insertArticle(title: title, content: content, author: author, image: image, webUrl: webDetail)
+                print(insert)
+                print("title == \(title) createTime = \(createTime) content == \(content) webDetail == \(webDetail) image = \(image) author = \(author) \n")
             }
         }
     }
