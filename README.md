@@ -4,7 +4,7 @@ LiteraryHeaven对应的数据抓取程序
 
 对应客户端项目:[LiteraryHeaven](https://github.com/SanWCoder/LiteraryHeaven)
 
-服务端项目 [LiteraryHeaven-server](https://github.com/SanWCoder/LiteraryHeaven-server)
+服务端项目:[LiteraryHeaven-server](https://github.com/SanWCoder/LiteraryHeaven-server)
 
 不足之处，还望海涵，有问题可以随时交流哦😯 [:mail_SanW@163.com](http://mail.163.com/)
 
@@ -17,16 +17,16 @@ LiteraryHeaven对应的数据抓取程序
 # 使用
 
 ```
-git clone https://github.com/SanWCoder/LiteraryHeaven-crawler.git
+~ git clone https://github.com/SanWCoder/LiteraryHeaven-crawler.git
 
-cd LiteraryHeaven-crawler
+~ cd LiteraryHeaven-crawler
 
-swift build
+~ swift build
 
-.build/debug/LiteratyHeavenCrawler
+~ .build/debug/LiteratyHeavenCrawler
 
 // 如果需要生成xcode项目可调式
-swift package generate-xcodeproj
+~ swift package generate-xcodeproj
 
 ```
 # 数据库设计规范
