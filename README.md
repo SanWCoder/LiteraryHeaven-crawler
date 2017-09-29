@@ -4,11 +4,13 @@ LiteraryHeaven对应的数据抓取程序
 
 # 更新记录
 
+2017.9.29--使用PerfectXML解析网页数据
+
 2017.9.28--v1.1.0
 
 # 数据库设计sql
 
-## tb_article
+#### tb_article
 
 ```
 SET NAMES utf8;
@@ -41,7 +43,7 @@ COMMIT;
 SET FOREIGN_KEY_CHECKS = 1;
 
 ```
-## tb_artivleType
+#### tb_artivleType
 
 ```
 SET NAMES utf8;
