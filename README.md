@@ -14,6 +14,21 @@ LiteraryHeaven对应的数据抓取程序
 
 2017.9.28--v1.1.0
 
+# 使用
+
+```
+git clone https://github.com/SanWCoder/LiteraryHeaven-crawler.git
+
+cd LiteraryHeaven-crawler
+
+swift build
+
+.build/debug/LiteratyHeavenCrawler
+
+// 如果需要生成xcode项目可调式
+swift package generate-xcodeproj
+
+```
 # 数据库设计规范
 
 该规范用于规范MySQL数据库的表设计，目的是希望规范数据库设计，尽量提前避免由于数据库设计不当而产生的麻烦。
@@ -88,7 +103,7 @@ COMMIT;
 SET FOREIGN_KEY_CHECKS = 1;
 
 ```
-## tb_artivleType
+#### tb_artivleType
 
 ```
 SET NAMES utf8;
