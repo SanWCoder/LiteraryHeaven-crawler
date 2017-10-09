@@ -10,9 +10,11 @@
 import Foundation
 import PerfectCURL
 import PerfectXML
+
 class SWDataRequest: NSObject {
+
     class func requestData()  {
-        
+
         let url = "http://www.hunliji.com/community"
         do
         {
@@ -71,5 +73,6 @@ class SWDataRequest: NSObject {
                 print("title == \(title) createTime = \(createTime) content == \(content) webDetail == \(webDetail) image = \(image) author = \(author) \n")
             }
         }
+        requestData()
     }
 }
