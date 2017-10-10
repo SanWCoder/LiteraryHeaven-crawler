@@ -6,7 +6,7 @@ LiteraryHeaven对应的数据抓取程序
 
 服务端项目:[LiteraryHeaven-server](https://github.com/SanWCoder/LiteraryHeaven-server)
 
-不足之处，还望海涵，有问题可以随时交流哦😯 [:mail_SanW@163.com](http://mail.163.com/)
+不足之处，还望海涵，如有问题请发送至:[mail_SanW@163.com](http://mail.163.com/)
 
 # 更新记录
 
